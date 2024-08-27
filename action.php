@@ -38,7 +38,7 @@ if(isset($_COOKIE[$gender_cookie])) {
 <br> 
 <?php
 $book1_cookie = "book1";
-if(isset($_POST['book2'])){
+if(isset($_POST['book1'])){
 $book1_value = $_POST['book1'] ;
 setcookie($book1_cookie,$book1_value  , time() + (86400 * 30), "/"); // 86400 = 1 day
 if(isset($_COOKIE[$book1_cookie])) {
